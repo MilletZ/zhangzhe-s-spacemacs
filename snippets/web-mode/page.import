@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: page.import
+# key: page.import
+# --
+<%@ page import="$1" %>
+$0
