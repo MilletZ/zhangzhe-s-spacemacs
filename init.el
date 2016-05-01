@@ -34,6 +34,8 @@ You should not put any user code in this function besides modifying the variable
      org
      (shell :variables
              shell-default-height 30
+             shell-default-ansi-term-shell "/bin/zsh"
+             shell-default-shell 'ansi-term
              shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
