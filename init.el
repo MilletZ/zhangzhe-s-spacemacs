@@ -34,8 +34,8 @@ You should not put any user code in this function besides modifying the variable
      org
      (shell :variables
              shell-default-height 30
-             shell-default-ansi-term-shell "/bin/zsh"
-             shell-default-shell 'ansi-term
+             shell-default-shell 'multi-term ;; Use multi-term as default shell.
+             multi-term-program "/bin/zsh" ;; Set multi-term use zsh.
              shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
@@ -78,7 +78,7 @@ values."
    ;; variable is `emacs' then the `holy-mode' is enabled at startup. `hybrid'
    ;; uses emacs key bindings for vim's insert mode, but otherwise leaves evil
    ;; unchanged. (default 'vim)
-   dotspacemacs-editing-style 'vim
+   dotspacemacs-editing-style 'hybrid
    ;; If non nil output loading progress in `*Messages*' buffer. (default nil)
    dotspacemacs-verbose-loading nil
    ;; Specify the startup banner. Default value is `official', it displays
